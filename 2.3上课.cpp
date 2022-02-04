@@ -8,7 +8,7 @@ int main()
 	int ch=0;*/
 	/*代码2：eof理解
 	int ch=0;
-	while((ch=getchar())!=EOF)
+	while((ch=getchar())!=EOF) //只有ctrl+z才会停止，其他都不会停止
 {
 	putchar(ch);
 }*/
@@ -43,11 +43,12 @@ int main()
 	
 	/*代码4:输入一串字符，然后只打印其中的数字*/
 	int ch=0;
-	while((ch=getchar())!=EOF){
+	while((ch=getchar())!=EOF){			//只有getchar读到ctrl+z才会停止
 		if(ch<'0'||ch>'9')
 			continue;
 		putchar(ch);
 	}
+
 	
 	
 	
